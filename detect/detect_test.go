@@ -718,6 +718,9 @@ func moveDotGit(t *testing.T, from, to string) {
 		err = os.Rename(fmt.Sprintf("%s/%s/%s", repoBasePath, dir.Name(), from),
 			fmt.Sprintf("%s/%s/%s", repoBasePath, dir.Name(), to))
 		require.NoError(t, err)
-		Line:        "-----BEGIN OPENSSH PRIVATE KEY-----"
+		
+		Match:       "-----BEGIN OPENSSH PRIVATE KEY-----",
+					Secret:      "-----BEGIN OPENSSH PRIVATE KEY-----",
+					Line:        "-----BEGIN OPENSSH PRIVATE KEY-----",
 	}
 }
