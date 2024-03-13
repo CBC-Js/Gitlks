@@ -659,6 +659,10 @@ func TestDetectWithSymlinks(t *testing.T) {
 					Line:        "-----BEGIN OPENSSH PRIVATE KEY-----",
 					File:        "../testdata/repos/symlinks/source_file/id_ed25519",
 					SymlinkFile: "../testdata/repos/symlinks/file_symlink/symlinked_id_ed25519",
+					// c new occurrence
+					Secret:      "-----BEGIN OPENSSH PRIVATE KEY-----",
+					Line:        "-----BEGIN OPENSSH PRIVATE KEY-----",
+					// c new occurrence
 					RuleID:      "apkey",
 					Tags:        []string{"key", "AsymmetricPrivateKey"},
 					Entropy:     3.587164,
