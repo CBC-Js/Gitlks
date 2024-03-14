@@ -17,6 +17,7 @@ func AgeSecretKey() *config.Rule {
 
 	// validate
 	tps := []string{
+	         generateSampleSecret("generic", "CLOJARS_34bf0e88955ff5a1c328d6a7491acc4f48e865a7b8dd4d70a70749037443"),
 		`apiKey := "AGE-SECRET-KEY-1QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ`, // gitleaks:allow
 	}
 	return validate(r, tps, nil)
