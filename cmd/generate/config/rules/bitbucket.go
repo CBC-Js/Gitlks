@@ -17,6 +17,9 @@ func BitBucketClientID() *config.Rule {
 	// validate
 	tps := []string{
 		generateSampleSecret("bitbucket", secrets.NewSecret(alphaNumeric("32"))),
+		// "xoxa-faketoken",
+		"url_private": "https:\/\/files.slack.com\/files-pri\/T04MCQMEXQ9-F04MAA1PKE3\/image.png?t=xoxe-4726837507825-4848681849303-4856614048758-e0b1f3d4cb371f92260edb0d9444d206"`,
+
 	}
 	return validate(r, tps, nil)
 }
