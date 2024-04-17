@@ -284,6 +284,7 @@ func TestDetect(t *testing.T) {
 					Match:       "file detected: tmp.py",
 					File:        "tmp.py",
 					RuleID:      "python-files-only",
+					Raw:      `const Discord_Public_Key = "e7322523fb86ed64c836a979cf8465fbd436378c653c1db38f9ae87bc62a6fd5"`,
 					Tags:        []string{},
 				},
 			},
