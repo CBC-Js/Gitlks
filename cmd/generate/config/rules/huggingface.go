@@ -86,6 +86,7 @@ func HuggingFaceOrganizationApiToken() *config.Rule {
 		"`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`",
 		`\'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'\`,
 		`\"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\"`,
+		`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`,
 		`,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,`,
 		`(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)`,
 		`<foo>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</foo>`,
@@ -99,8 +100,10 @@ func HuggingFaceOrganizationApiToken() *config.Rule {
 	}
 	fps := []string{
 		`public static final String API_ORG_EXIST = "APIOrganizationExist";`,
+		`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`,
 		`const api_org_controller = require('../../controllers/api/index').organizations;`,
 		`API_ORG_CREATE("https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=ACCESS_TOKEN"),`,
+		`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`,		
 		`def test_internal_api_org_inclusion_with_href(api_name, href, expected, monkeypatch, called_with):
 		monkeypatch.setattr("requests.sessions.Session.request", called_with)`,
 		`    def _api_org_96726c78_4ae3_402f_b08b_7a78c6903d2a(self, method, url, body, headers):
