@@ -18,7 +18,6 @@ const (
 
 func main() {
 	if len(os.Args) < 2 {
-		os.Stderr.WriteString("Specify path to the gitleaks.toml config\n")
 		os.Exit(2)
 	}
 	gitleaksConfigPath := os.Args[1]
